@@ -1,0 +1,368 @@
+@import './color.less';
+
+/* header头部，通知的小圆点样式 */
+#header .el-badge__content {
+  border: 0 !important;
+}
+
+/* home页的下拉选框大小 */
+.home-chart-sel .el-input__inner {
+  width: 124px !important;
+  ;
+  height: 24px !important;
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.home-chart-sel .el-icon-arrow-up:before {
+  content: "\E6E1";
+}
+
+/* 侧边栏 */
+#sidebar .el-menu {
+  border-right: 0;
+  font-size: 14px;
+  color: #fff;
+  background: #364051
+}
+
+.el-menu--horizontal {
+  border-bottom: 0 !important;
+}
+
+#sidebar .el-menu-item-group__title {
+  padding-bottom: 0px !important;
+}
+
+#sidebar .el-submenu__title {
+  height: 50px !important;
+  color: #fff !important;
+}
+
+#sidebar .el-menu--horizontal>.el-submenu .el-submenu__title {
+  height: 50px;
+}
+
+#sidebar .el-submenu .el-menu-item {
+  // width: 159px;
+  // min-width: 159px !important;
+  border-left: 2px solid transparent;
+  text-indent: 11px;
+}
+
+#sidebar .el-menu--horizontal>.el-submenu .el-submenu__icon-arrow {
+  margin-left: 30px;
+}
+
+#sidebar .el-submenu__icon-arrow {
+  margin-top: -2px;
+  margin-right: 8px
+}
+
+#sidebar .el-menu-item.is-active {
+  color: #fff;
+  border-color: @base;
+  background-color: #2b3341 !important;
+}
+
+#sidebar .el-menu-item:hover {
+  color: @base;
+  background-color: #2b3341 !important;
+}
+
+#sidebar .el-menu-item:focus {
+  background: #364051;
+}
+
+#sidebar .el-submenu__title:hover {
+  background-color: #2b3341 !important;
+}
+
+#sidebar .el-menu-item {
+  color: #fff
+}
+
+#sidebar .el-menu-item .is-active {
+  background-color: #2b3341 !important;
+}
+
+/* 全局下拉框 */
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background: #f3f4f4 !important;
+}
+
+.el-select-dropdown__item.selected {
+  color: @base  !important;
+  font-weight: normal !important;
+}
+
+.el-select-dropdown__item {
+  font-size: 12px !important;
+}
+
+.el-input__inner {
+  font-size: 12px !important;
+}
+
+#login-btn.el-button {
+  width: 200px !important;
+}
+
+/* 日期输入框 */
+.el-date-editor .el-range__icon {
+  line-height: 18px !important;
+  float: right !important;
+}
+
+.el-date-editor .el-range-input {
+  line-height: 18px !important;
+  font-size: 12px !important;
+}
+
+.el-date-editor .el-range-separator {
+  line-height: 25px !important;
+  font-size: 12px !important;
+}
+
+/* tab */
+.el-tabs--border-card>.el-tabs__header .el-tabs__item {
+  border-top: 3px solid transparent !important;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item {
+  color: #262626 !important;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+  color: #262626 !important;
+  border-top: 3px solid @base  !important;
+}
+
+/* #ex-manage .el-tabs--border-card>.el-tabs__content{!important; } */
+/* 推广计划搜索框 */
+.ex-search .el-input__inner {
+  height: 28px !important;
+}
+
+.ex-search .el-input__icon {
+  cursor: pointer;
+  line-height: 28px;
+}
+
+.ex-search .el-input__icon:hover {
+  color: #8391a5;
+}
+
+.el-input__icon {
+  line-height: 25px !important;
+}
+
+/* 单选按钮 */
+.el-radio__label {
+  font-size: 12px !important;
+}
+
+.el-radio__input.is-disabled+span.el-radio__label {
+  color: #999 !important;
+}
+
+/* 推广管理-广告 */
+.ex-setSel .el-select .el-input__inner {
+  width: 125px !important;
+  height: 28px !important;
+}
+
+/* form表单 */
+.el-form-item__label {
+  line-height: 30px !important;
+}
+
+.el-form--label-top .el-form-item__label {
+  padding: 0 !important;
+  font-size: 12px !important;
+  color: #262626;
+}
+
+.label-style .el-form-item__label {
+  margin-bottom: 10px !important;
+  font-size: 12px !important;
+  color: #262626;
+}
+
+.ruleForm .el-form-item.is-required .el-form-item__label:before {
+  content: '*' !important;
+  color: #F56C6C !important;
+  margin-right: 4px !important;
+}
+
+.label-style .el-form-item__error {
+  top: 72% !important;
+  left: 16px !important
+}
+
+.textArea-label-style .el-form-item__error {
+  top: 100% !important;
+  left: 16px !important
+}
+
+.sex-ratio .el-form-item__error {
+  top: 72% !important;
+  left: 140px !important
+}
+
+.group-label-style .el-form-item__label {
+  margin-bottom: 20px !important;
+  font-size: 12px !important;
+  color: #262626;
+}
+
+.group-label-style .el-form-item__error {
+  top: 66% !important;
+  left: 16px !important
+}
+
+.finance-style .el-form-item__error {
+  top: 97% !important;
+  left: 16px !important
+}
+
+.el-form-item__content {
+  line-height: 20px !important;
+}
+
+.el-form-item {
+  margin-bottom: 10px !important;
+}
+
+s .el-form-item.is-required .el-form-item__label:before {
+  content: '' !important;
+}
+
+.fin-mod .el-input__icon {
+  line-height: 32px !important;
+}
+
+/* 下一步按钮样式 */
+.plan-btn .el-button {
+  padding: 10px 63px !important;
+}
+
+/* 宽版input和下拉框 */
+.max-inp .el-input__inner,
+.max-inp .el-input,
+.max-inp .el-form-item__content,
+.max-inp .el-select {
+  width: 408px !important;
+  height: 34px !important;
+  display: inline-block
+}
+
+.mask-inp .el-input__inner,
+.mask-inp .el-input {
+  width: 200px !important;
+  height: 34px !important;
+}
+
+/* 弹框btn */
+.mask-btn .el-button {
+  padding: 10px 18px !important;
+}
+
+/* 弹框 */
+#mask-btn-bor.el-button {
+  border-color: #f1f1f1;
+  color: #999999;
+}
+
+#mask-btn-bor.el-button:hover {
+  background-color: #409EFF;
+  color: #fff;
+}
+
+/* 特殊input */
+/* 按钮组的空白按钮 */
+#speBtn.el-button {
+  border-color: @base;
+  color: @base;
+}
+
+/* 特殊input*/
+.max-inp .mini-id .el-input__inner,
+.max-inp .mini-id .el-input {
+  width: 318px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+
+/* 上传样式 */
+.el-upload-dragger .el-upload__text {
+  color: #999999 !important;
+  font-size: 12px !important;
+}
+
+/* 日期框 */
+.delvCon .el-input__inner {
+  height: 24px !important;
+  width: 220px !important;
+  line-height: 18px;
+}
+
+.delvCon .el-input__prefix {
+  text-align: right !important;
+  line-height: 18px !important;
+  right: 10px !important;
+  top: -1px !important;
+}
+
+/*上传  */
+.el-upload-tit {
+  color: #595959;
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+
+
+.el-message {
+  top: 60px !important;
+}
+
+.home-chart-sel .el-input__inner {
+  line-height: 24px !important;
+}
+
+//我的媒体
+.my-media {
+  .batch-import{
+    .el-dialog {
+      width: 648px;
+      height: 485px;
+      margin-top: 25vh;
+  
+      >.el-dialog__header {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+  .ad-code{
+    .el-dialog {
+      width: 650px;
+      height: 450px;
+      margin-top: 25vh;
+  
+      >.el-dialog__header {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.table-mini-btn.el-button--mini {
+  padding: 3px 5px;
+  margin-left: 10px;
+}
