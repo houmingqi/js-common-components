@@ -1,4 +1,4 @@
-# js-common-components
+# js-common-components：封装了一些平时开发常用的功能
 
 ## axios.js: 封装了axios请求，以及axios拦截器的设置
 ## clearstyle.css：清空默认样式
