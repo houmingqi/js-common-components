@@ -28,11 +28,11 @@ axios.interceptors.request.use(config => {
 // 响应拦截器
 axios.interceptors.response.use(response => {
     if(response.data.code == "201") {
-        if(BaseUrl == '/api' || BaseUrl == 'http://adx-api.xiaoshentui.net') {
+        if(BaseUrl == '/api' || BaseUrl == 'baseurl') {
             // 测试环境
-            window.location.href = "http://adxtest.xiaoshentui.net/?loginout=7";
+            window.location.href = "testurl";
         }else {
-            window.location.href = "http://www.xmadx.com/?loginout=7";
+            window.location.href = "formalurl";
         }
     }
 })
@@ -46,11 +46,7 @@ const Axios = function (obj) {
     return new Promise((response, reject) => {
         let method = obj.method || 'post';
         let data = obj.data || '';
-        if (obj.url == "https://zhishuapi.aldwx.com/Main/action/Dashboard/Homepage/CommonAd") {
-            root = '';
-        } else {
-            root = process.env.API_ROOT;
-        }
+        root = process.env.API_ROOT;
         axios({
             url: root + obj.url,
             method: method,
