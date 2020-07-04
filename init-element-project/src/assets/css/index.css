@@ -1,0 +1,241 @@
+html,
+body,
+div,
+span,
+iframe,
+map,
+font,
+img,
+a img,
+samp,
+strong,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+p,
+blockquote,
+a,
+address,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tr,
+td,
+th {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f5f7f9;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+.main {
+  min-width: 1080px;
+  margin-top: 50px;
+  /* margin-left: 160px; */
+  padding: 20px;
+}
+
+.maintop {
+  min-width: 1080px;
+  /* margin-left: 160px; */
+}
+
+.clearFix:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+/* 图表趋势图移入显示工具样式 */
+.lineTip {
+  width: 200px !important;
+  color: #333 !important;
+  padding: 0 !important;
+  border: 1px solid #e7e7e7 !important;
+  border-radius: 3px !important;
+  background: rgba(255, 255, 255, .8) !important;
+  font-weight: 400 !important;
+}
+
+.lineTip h5 {
+  color: #333 !important;
+  background: rgba(123, 123, 123, 0.1) !important;
+  margin-top: 0 !important;
+  line-height: 32px !important;
+  font-size: 12px !important;
+  padding-left: 11px !important;
+  margin-bottom: 0 !important;
+  font-family: '"Microsoft YaHei" !important';
+}
+
+.lineTip b {
+  float: right;
+  font-weight: 300;
+}
+
+.lineTip p {
+  margin: 10px;
+}
+
+.lineTip p span {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 6px !important;
+  margin-bottom: 2px;
+}
+
+/* 设置表格头部颜色 */
+.el-table {
+  font-size: 12px !important;
+  color: #595959 !important;
+}
+
+.el-table th.is-leaf {
+  background: #f5f7f9 !important;
+  font-size: 12px;
+  color: #262626;
+}
+
+.el-table td {
+  padding: 8px 0 !important;
+  padding-left: 25px !important;
+}
+
+.el-table th {
+  padding: 8px 0 !important;
+  padding-left: 25px !important;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+/* 弹框样式 */
+.el-layer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+}
+
+.mask-pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 200;
+}
+
+.glob-main-box {
+  margin: 0 20px;
+  background: #fff;
+  border: 1px solid #e4e5e7;
+}
+
+.glob-cont-nav {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 2px #eee;
+}
+
+.glob-cont-navs {
+  padding: 6px 6px 6px 22px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 2px #eee;
+}
+
+/* 头部消息提示框 */
+/* 弹出框 */
+.notiveDialog .el-dialog__title {
+  font-size: 14px !important;
+  color: #666666 !important;
+}
+
+.notiveDialog .el-dialog__body {
+  padding: 0 20px 20px;
+}
+
+.notiveDialog .el-badge__content {
+  margin-left: 2px;
+  margin-top: 18px;
+}
+
+.notiveDialog .el-icon-arrow-right:before {
+  content: "\E790";
+  color: #666666 !important;
+}
+
+.notiveDialog .el-collapse {
+  border: 1px solid #ebeef5 !important;
+  border-radius: 3px !important;
+}
+
+.notiveDialog .el-collapse-item__content {
+  padding: 10px !important;
+}
+
+.notiveDialog .el-collapse-item__header {
+  color: #666666 !important;
+  font-size: 12px;
+}
+
+.notiveDialog .el-dialog {
+  border-radius: 5px !important;
+}
+
+.ssp-main {
+  min-width: 1080px;
+  /* margin-left: 160px; */
+  padding-bottom: 40px;
+}
