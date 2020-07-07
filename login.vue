@@ -3,7 +3,10 @@
 //     {
 //         path: '/',
 //         name: '/',
-//         component: Index
+//         component: Index,
+//         meta: {
+//             requireAuth: true, 
+//         }, 
 //     },
 //     {
 //         path: '/repository',
@@ -33,8 +36,8 @@
 //                 state.currnentUser=user;
 //                 state.isLogin = true;
 //             }else if(user===null) {
-//                 localStorage.setItem('userName',null);
-//                 localStorage.setItem('userToken','');
+//                 sessionStorage.setItem('userName',null);
+//                 sessionStorage.setItem('userToken','');
 //                 state.currentUser=null;
 //                 state.isLogin=false;
 //                 state.token='';
@@ -90,31 +93,45 @@
 // },
 // computed: {
 //     isLogin() {
-//         if(localStorage.getItem('userName')&&localStorage.getItem('userToken')) {
-//             this.setUser(localStorage.getItem("userName"));
+//         if(sessionStorage.getItem('userName')&&sessionStorage.getItem('userToken')) {
+//             this.setUser(sessionStorage.getItem("userName"));
 //         }else {
 //             this.setUser(null);
 //         }
 //         return this.isLogin;
-//     }
+//     },
+//      submitForm(formName) {
+//         let _this = this;
+//         this.$refs[formName].validate((valid) => {
+//           if (valid) {
+//             sessionStorage.setItem('userName','校验通过的用户名');
+//             sessionStorage.setItem("userToken", '返回的token值');
+//             _this.$router.push({path: "/index/table"});
+//           } else {
+//             console.log('error submit!!');
+//             return false;
+//           }
+//         });
+//       },
 // }
 
 
 // 第五步：beforeEach路由判断
 // router.beforeEach((to, from, next) => {
 //     if (to.meta.requireAuth) {  // 判断该路由是否需要登录权限    
-//        const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-//         if (userInfo) {  // 通过vuex state获取当前的token是否存在
-//             next();
-//         }
-//         else {
-//             next({
-//                 path: '/login',
-//                 query: {redirect: to.fullPath}  // 将跳转的路由path作为参数，登录成功后跳转到该路由
-//             })
-//         }
-//     }
-//     else {
-//         next();
-//     }
-// })
+//          if (sessionStorage.getItem("token") == 'true') { // 判断本地是否存在token
+//              next()
+//          } else {
+//              // 未登录,跳转到登陆页面
+//              next({
+//                path: '/login'
+//              })
+//          }
+//      } else {
+//        if(sessionStorage.getItem("token") == 'true'){
+//          next('/index/table');
+//        }else{
+//          next();
+//        }
+//      }
+//})
